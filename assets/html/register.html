@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../icon.png">
+
+</head>
+<body>
+    <header id="register">
+
+        <div class="registerContainer">
+            <h1>Register</h1>
+            <form action="../../index.html" class="registerForm" onsubmit="return validate()">
+                <label for="fname" class="left regisLabel">Full Name</label>
+                <input type="text" placeholder="Full Name" id="fname" class="regis">
+                <span class="error"></span>
+
+                <label for="email" class="left regisLabel">Email</label>
+                <input type="text" placeholder="Email" id="regisEmail" class="regis">
+                <span class="error"></span>
+
+                <p>Gender</p>
+                <div class="gender">
+                    <div>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fmale" name="gender">
+                        <label for="fmale">Female</label>
+                    </div>
+                </div>
+                <span class="error"></span>
+
+                <div class="city">
+                    <label for="city">City</label>
+                    <br>
+                    <select>
+                        <option id="jkt">Jakarta</option>
+                        <option id="jgl">Jonggol</option>
+                        <option id="bgr">Bogor</option>
+                        <option id="jpg">Jepang</option>
+                    </select>
+                </div>
+                <span class="error"></span>
+
+                <label for="password" class="left regisLabel">Password</label>
+                <input type="password" placeholder="Password" id="regisPass" class="regis">
+                <span class="error"></span>
+
+                <label for="confirmPass" class="left regisLabel">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="confirmPass" class="regis">
+                <span class="error"></span>
+
+                <button>Register</button>
+            </form>
+        </div>
+
+    </header>
+
+    <script src="../js/register.js"></script>
+</body>
+</html>

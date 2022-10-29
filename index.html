@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/icon.png">
+</head>
+
+<body>
+
+    <nav>
+        <img src="./assets/icon.png" alt="icon">
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <div class="productsWrapper">
+                    <p id="product">Products</p>
+                    <div class="products">
+                        <a href="#healthcare">Healthcare</a>
+                        <a href="#healthcare">Cosmetics</a>
+                        <a href="#healthcare">Misc.</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#aboutUs">About Us</a>
+            </li>
+            <li>
+                <a href="./assets/html/register.html">Register</a>
+            </li>
+            <div class="login">
+                <li>
+                    <a href="./assets/html/login.html">Login</a>
+                </li>
+            </div>
+        </ul>
+        <span class="hamburger">&#9776</span>
+    </nav>
+
+    <div class="hamburgerList">
+        <ul class="lists">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#products" id="hamburgerClick">Products</a>
+            </li>
+            <li>
+                <a href="#aboutUs">About Us</a>
+            </li>
+            <li>
+                <a href="./assets/html/register.html">Register</a>
+            </li>
+            <li>
+                <a href="./assets/html/login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hamburgerProduct">
+        <ul class="lists">
+            <li>
+                <a href="#healthcare">Healthcare</a>
+            </li>
+            <li>
+                <a href="#healthcare">Cosmetics</a>
+            </li>
+            <li>
+                <a href="#healthcare">Miscellaneous</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <header>
+        <div id="home">
+            <h1>WELCOME TO MEDICARE</h1>
+            <p>One stop solution for your healthcare</p>
+            <a href="./assets/html/register.html" class="joinUs">Join Us</a>
+        </div>
+    </header>
+
+    <main>
+        <article id="healthcare">
+            <h1>Healthcare</h1>
+            <p>Our most popular health care products, made and packaged carefully to cater your needs</p>
+            <br><br>
+            <div class="cardWrapper">
+                <div class="card">
+                    <div class="best">
+                        <p>Best Selling!</p>
+                    </div>
+                    <img src="./assets/healthcare/basil_oil.jpg" alt="">
+                    <h3>MediCare Essential Oil</h3>
+                    <p>Basil oil is extracted from the herb Ocimum basilicum, of the Lamiaceae (Labiatae) family. It is
+                        also known as European, French, common or sweet basil.</p><br>
+                </div>
+                <div class="card">
+                    <img src="./assets/healthcare/shampoo.jpg" alt="">
+                    <h3>MediCare Special Shampoo</h3>
+                    <p>Get a head start every morning and experience the refreshing tingle of our special shampoo. Our
+                        shampoo contains special ingredients and tea tree oil to help wash away impurities.</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/healthcare/lotion.jpg" alt="">
+                    <h3>MediCare Body Lotion</h3>
+                    <p>Containing earth-derived ingredients (think shea butter, cocoa butter, and jojoba oil) the rich
+                        concoction is formulated to condition, nourish, and smooth dry skin.</p>
+                </div>
+            </div>
+        </article>
+        <article id="aboutUs">
+            <h1>About Us</h1>
+            <img src="./assets/icon.png" alt="">
+            <div class="text">
+                <p>Founded in 2001, Medicare started as a small family-owned healthcare store in Kemanggisan, Jakarta. As more and more people get to know about Medicare, it is natural for us to expand our stores to other cities and provinces. Now, we have more than 100 stores spread out in almost every major cities in Indonesia, including but not limited to Aceh, Medan, Palembang, Jakarta, Surabaya, Pontianak, Baikpapan and Makassar. We also offers a wider variety for products from healthcare, cosmetics, medicines and many more. We have a commitment to stay true to our humble origin and serving our customers with best customer services and high quality products.</p>
+                <h3>Contact Us</h3>
+                <p>Customer Service Hotline: (+62) 081123456789</p>
+                <p>Customer Service Email: support@medicare.id</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="sosmed">
+            <a href="https://twitter.com/stevenaruu" target="_blank">
+                <img src="./assets/sosmed/twitter.png" alt="twitter">
+            </a>
+            <a href="https://github.com/StevenForsythia" target="_blank">
+                <img src="./assets/sosmed/github.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/stevenforsythia/" target="_blank">
+                <img src="./assets/sosmed/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <p>Copyright &copy; 2022 Steven. All Right Reverved</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

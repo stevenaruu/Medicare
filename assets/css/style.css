@@ -1,0 +1,610 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+nav {
+    width: 100%;
+    height: 5em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 2em;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 6px 6px;
+    position: fixed;
+    z-index: 3;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    list-style: none;
+    gap: 2em;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+li p {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+li::before {
+    content: '';
+    width: 100%;
+    border: 1px solid #38abab;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: .3s ease-in;
+}
+
+li:hover::before {
+    transform: translateX(0);
+    transition: .3s ease-out;
+}
+
+.productsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products {
+    margin-top: 10em;
+    height: 8em;
+    width: 8em;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.30) 1.95px 1.95px 2.6px;
+    visibility: hidden;
+}
+
+.products a:hover {
+    color: #38abab;
+}
+
+.products a:nth-child(2) {
+    margin: 1em 0em;
+}
+
+.login {
+    background-color: #38abab;
+    height: 2em;
+    width: 5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4em;
+}
+
+.login a {
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+
+}
+
+#home {
+    height: 100%;
+    background: rgba(0, 0, 0, .65) url(../home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#home h1 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    font-size: 20px;
+}
+
+.joinUs {
+    text-decoration: none;
+    background-color: #38abab;
+    color: white;
+    padding: 0.5em 1.5em;
+    transition: .3s ease-in;
+}
+
+.joinUs:hover {
+    background-color: #214F4F;
+    transition: .3s ease-out;
+}
+
+#healthcare {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F1F5F9;
+    text-align: center;
+}
+
+#healthcare h1 {
+    font-size: 2.5em;
+}
+
+.best {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 2em;
+    background-color: yellow;
+    width: 7.5em;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 0;
+}
+
+.cardWrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10%;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 330px;
+    height: 500px;
+    box-shadow: .8px .9px 3px grey;
+    transition: .3s ease-out;
+    background-color: white;
+    cursor: pointer;
+    padding: 1.5em;
+    position: relative;
+    text-align: left;
+}
+
+.card h3 {
+    margin: 5% 0%;
+    color: black;
+}
+
+.card img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 12em;
+    margin-bottom: 5%;
+}
+
+.card:hover {
+    box-shadow: 1px 8px 20px grey;
+    transition: .3s ease-in;
+    
+}
+
+#aboutUs {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+#aboutUs h1 {
+    font-size: 2.5em;
+}
+
+#aboutUs h3 {
+    margin: 0.5em 0em;
+}
+
+#aboutUs img {
+    margin: 1em;
+    height: 4em;
+}
+
+#aboutUs .text {
+    width: 60%;
+}
+
+#aboutUs h1 {
+    margin-top: 3%;
+    font-weight: 900;
+}
+
+footer {
+    position: relative;
+    height: 5em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F5F9;
+}
+
+footer p {
+    color: black;
+}
+
+.sosmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.sosmed img{
+    height: 1.5em;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F5F9;
+}
+
+.loginContainer {
+    width: 40%;
+    height: 55%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 8px 10px grey;
+    flex-direction: column;
+}
+
+.loginContainer h1 {
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    position: relative;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.loginForm a {
+    color: #38abab;
+    transition: all .3s ease-in;
+}
+
+.loginForm a:hover {
+    color: #214F4F;
+}
+
+.loginForm input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    outline: none;
+    font-weight: 700;
+}
+
+.loginForm button {
+    padding: 2% 20%;
+    color: white;
+    border: none;
+    background-color: #38abab;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    margin-bottom: 3em;
+}
+
+.loginForm button:hover {
+    background-color: #214F4F;
+}
+
+.error{
+    display: block;
+    margin-right: auto;
+    margin-bottom: 3em;
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.left {
+    display: block;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #38abab;
+    visibility: hidden;
+}
+
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F5F9;
+}
+
+.registerContainer {
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 8px 10px grey;
+    flex-direction: column;
+}
+
+.registerContainer h1 {
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.gender {
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+    font-weight: 600;
+    font-size: 14px;
+    accent-color: teal;
+}
+
+.registerContainer p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.registerForm .regis {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.registerForm button {
+    padding: 2% 20%;
+    color: white;
+    border: none;
+    background-color: #38abab;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    margin-bottom: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registerForm button:hover {
+    background-color: #214F4F;
+}
+
+.registerForm select {
+    width: 26em;
+    height: 3em;
+    border-radius: 0.3em;
+}
+
+.city {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+select {
+    color: black;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.regisLabel {
+    visibility: hidden;
+}
+
+.hamburger{
+    display: none;
+    font-weight: 900;
+}
+
+.hamburgerList {
+    display: none;
+}
+
+.hamburgerProduct {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        font-weight: 900;
+        transition: all 0.5s ease-in;
+    }
+
+    .hamburgerList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 75%;
+        background-color: #38abab;
+        position: fixed;
+        top: 0%;
+        box-shadow: rgba(0, 0, 0, 0.30) 0px 6px 6px;
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in;
+        z-index: 1;
+
+    }
+
+    .hamburgerList ul {
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburgerList li::before {
+        content: '';
+        width: 100%;
+        border: 1px solid white;
+        bottom: 0;
+        position: absolute;
+        transform: translateX(-101%);
+        transition: .3s ease-in;
+    }
+    
+    .hamburgerList li:hover::before {
+        transform: translateX(0%);
+        transition: .3s ease-out;
+    }
+
+    .hamburgerList ul li a {
+        color: white;
+    }
+
+    .hamburgerProduct {
+           display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 75%;
+            background-color: white;
+            position: fixed;
+            top: 0%;
+            box-shadow: rgba(0, 0, 0, 0.30) 0px 6px 6px;
+            transform: translateY(-100%);
+            transition: all 0.5s ease-in;
+            z-index: 2;
+    }
+
+    .hamburgerProduct ul {
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburgerProduct ul li a {
+        color: #38abab;
+    }
+
+    #home {
+        gap: 1em;
+    }
+
+    #home p {
+        color: white;
+        font-size: 16px;
+    }
+
+    #healthcare {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cardWrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10%;
+    }
+
+    .card {
+        margin-bottom: 10%;
+    }
+
+    #healthcare h1 {
+        margin-top: 10%;
+    }
+
+    #aboutUs {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+
+    #aboutUs h1 {
+        margin-top: 10%;
+    }
+
+    #aboutUs .text {
+        width: 90%;
+    }
+
+    .loginContainer {
+        width: 90%;
+    }
+
+    .registerContainer {
+        height: 95%;
+        width: 90%;
+    }
+
+}
